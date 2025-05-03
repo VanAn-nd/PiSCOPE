@@ -11,7 +11,7 @@ This is still testing version!
 
 
 
-![1](https://github.com/user-attachments/assets/496fe625-cd69-421c-939b-9c9eeff3086e)
+![1](https://github.com/user-attachments/assets/7b3e4b2d-10e7-48e6-b6e0-9fb43e72fd99)
 
 
 
@@ -20,3 +20,4 @@ This is still testing version!
 - Fix relay and opto switch issues.
 - Select another amplifier AD8009 1GHz.
 - Use MT3608-Cuk converter as negative voltage regulator.
+-Firmware v1.1 I will upload soon.
