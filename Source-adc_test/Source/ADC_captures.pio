@@ -1,0 +1,36 @@
+
+.program adc_captures
+.side_set 2
+
+.wrap_target
+    in pins,16     side 0b11  ;
+    push block     side 0b00  ;
+.wrap
+
+
+% c-sdk {
+
+void adc_captures_program_init(PIO pio, uint sm, uint offset)
+{
+   pio_gpio_init(pio, 0);
+   pio_sm_set_consecutive_pindirs(pio, sm, 0, 16, false); //16pin ADC data bus
+   pio_sm_set_consecutive_pindirs(pio, sm, 26, 2, true);
+   pio_gpio_init(pio, 26);  //clk pins
+   pio_gpio_init(pio, 27);
+
+   pio_sm_config c = adc_captures_program_get_default_config(offset);
+   sm_config_set_in_pins(&c, 0);
+   sm_config_set_sideset_pins(&c, 26);
+   sm_config_set_wrap(&c, offset, offset+1);
+   sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
+   sm_config_set_in_shift(&c,false,true,32);
+   sm_config_set_clkdiv(&c, 1);
+
+   pio_sm_init(pio, sm, offset, &c);
+   pio_sm_set_enabled(pio, sm, true);
+}
+%}
+
+
+
+
