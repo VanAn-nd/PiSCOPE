@@ -24,7 +24,7 @@ void adc_captures_program_init(PIO pio, uint sm, uint offset)
    sm_config_set_wrap(&c, offset, offset+1);
    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
    sm_config_set_in_shift(&c,true,true,32);
-   sm_config_set_clkdiv(&c, 1); //250MHz/(2*1)=125msp/s
+   sm_config_set_clkdiv(&c, 1); //250MHz/(2*1)=125ms/s
 
    pio_sm_init(pio, sm, offset, &c);
    pio_sm_set_enabled(pio, sm, true);
