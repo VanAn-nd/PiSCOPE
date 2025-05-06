@@ -21,7 +21,7 @@
 
 
  int main() {
-	set_sys_clock_khz(250000, true);  //over lcock
+	set_sys_clock_khz(250000, true);  //over clock
 	stdio_init_all();
 	offset = pio_add_program(pio, &adc_captures_program); //add PIO program
 	adc_captures_program_init(pio, sm, offset);
