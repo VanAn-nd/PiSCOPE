@@ -22,10 +22,6 @@
 #define LGRAY      0XC618
 #define LGRAYBLUE  0XA651
 #define LBBLUE     0X2B12
-#define TRACE      0x5aeb//0X861//0X8430//0x5aeb//0x52aa
-#define TRACE_CTR  0x3186
-//#define BGR        0x19a9
-#define LOGO       0x0b9e
 
 #define ST7789_SWRESET 0x01
 #define ST7789_SLPOUT  0x11
