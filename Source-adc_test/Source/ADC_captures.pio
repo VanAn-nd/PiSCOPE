@@ -13,8 +13,8 @@
 void adc_captures_program_init(PIO pio, uint sm, uint offset)
 {
    pio_gpio_init(pio, 0);
-   pio_sm_set_consecutive_pindirs(pio, sm, 0, 16, false); //16 pin ADC data bus
-   pio_sm_set_consecutive_pindirs(pio, sm, 26, 2, true); //2 pin ADC clk
+   pio_sm_set_consecutive_pindirs(pio, sm, 0, 16, false); //16 pins ADC data bus
+   pio_sm_set_consecutive_pindirs(pio, sm, 26, 2, true); //2 pins ADC clk
    pio_gpio_init(pio, 26);  //clk pins
    pio_gpio_init(pio, 27);
 
