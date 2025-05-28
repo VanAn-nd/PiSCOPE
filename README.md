@@ -18,6 +18,5 @@ This is first test version!
 
 30/4/2025 Update Ver 1.1:
 - Fix relay and opto switch issues.
-- Select another amplifier AD8009 1GHz.
+- Select another amplifier AD8009 1GHz, or LMH6702 1.7Ghz.
 - Use MT3608-Cuk converter as negative voltage regulator.
--Firmware v1.1 I will upload soon.
