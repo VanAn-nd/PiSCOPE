@@ -20,3 +20,6 @@ This is first test version!
 - Fix relay and opto switch issues.
 - Select another amplifier AD8009 1GHz, or LMH6702 1.7Ghz.
 - Use MT3608-Cuk converter as negative voltage regulator.
+- Battery measure.
+- Firmware: already work! but i will update date, fix bugs, calib...
+- Going to add XY mode, FFT.
