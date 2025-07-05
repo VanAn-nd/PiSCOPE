@@ -36,4 +36,4 @@ This is first test version!
 - The trigger detection algorithm greater.
 - Simple manual calibration mode.
 - All configurations and calibration data are saved to a 24C256 EEPROM.
-- FFT functionality has been implemented (will be update on next firmware version).
+- FFT functionality has been implemented (will be update on next firmware version). 1024/RP2040  and 4096/RP2350.
