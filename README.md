@@ -23,3 +23,17 @@ This is first test version!
 - Battery measure.
 - Firmware: already work! but i will update date, fix bugs, calib...
 - Going to add XY mode, FFT.
+
+
+
+![z6773615025421_091915a3604e0ad2a1723aef5994ce86](https://github.com/user-attachments/assets/1168328e-e799-42dc-ae39-421d7c535c3f)
+
+
+
+5/7/2025 Update firmware v1.1.2:
+- Hardware work great.
+- Added Acquisition modes (Average/Peak Detect).
+- The trigger detection algorithm greater.
+- Simple manual calibration mode.
+- All configurations and calibration data are saved to a 24C256 EEPROM.
+- FFT functionality has been implemented (will be update on next firmware version).
