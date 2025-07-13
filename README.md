@@ -38,5 +38,7 @@ This is first test version!
 - Simple manual calibration mode.
 - All configurations and calibration data are saved to a 24C256 EEPROM.
 - FFT functionality has been implemented (will be update on next firmware version). 1024/RP2040  and 4096/RP2350.
+
+
 13/7/2025:
         Comparison between the RP2040 and RP2350A: The RP2350A has more than twice the amount of RAM compared to the RP2040, and importantly, it features an FPU (Floating Point Unit), which significantly speeds up computations compared to the RP2040. Currently, the FFT mode is set by default to 1024 points for the RP2040 and 4096 points for the RP2350A. Commonly used window functions include: HFT248D, Flat Top, Blackman-Harris, Hamming, and Hanning.
